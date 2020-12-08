@@ -1,0 +1,24 @@
+/***** OM OS CSS ******/
+
+h2 {
+    text-align: center;
+}
+
+.omossection > .wp-block-group__inner-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    margin: 10px;
+    justify-items: center;
+}
+
+.omos1 {
+    max-width: 500px;
+}
+
+.omos2 img {
+    width: 500px;
+    height: 560px;
+    object-fit: cover;
+    object-position: 0 0;
+}
