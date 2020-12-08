@@ -1,13 +1,13 @@
 let content;
-let container = document.querySelector("#container");
-let temp = document.querySelector("template");
+/*let container = document.querySelector("#container");
+let temp = document.querySelector("template");*/
 
 window.addEventListener("load", sidenVises);
 
 function sidenVises() {
     console.log("sidenVises");
 
-    document.querySelector(".menuknap").addEventListener("click", toggleMenu);
+   /* document.querySelector(".menuknap").addEventListener("click", toggleMenu);*/
 
 }
 
