@@ -100,5 +100,6 @@ header nav a img {
         width: 350px;
         height: 300px;
         object-fit: cover;
-        object-position: 0 0;
+        object-position: 0 4;
+        margin-bottom: 60px;
     }

@@ -139,6 +139,8 @@ section {
     margin-right: 100px;
     margin-left: 100px;
     margin-bottom: 50px;
+    border: 1px solid black;
+    padding: 20px;
 }
 
 .raavarer1 {
@@ -148,6 +150,8 @@ section {
 .togoodtogo1 p {
     margin-right: 100px;
     margin-left: 100px;
+    border: 1px solid black;
+    padding: 20px;
 }
 
 .togoodtogo1 {
