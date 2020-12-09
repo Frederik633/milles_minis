@@ -4,6 +4,14 @@ h2 {
     text-align: center;
 }
 
+section {
+    margin-left: 150px;
+    margin-right: 150px;
+    /*    border: 2px solid black;*/
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+}
+
 .omossection > .wp-block-group__inner-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -44,11 +52,16 @@ h2 {
 
 
 .raavarer1 {
-    margin-right: 200px;
-    margin-left: 200px;
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-bottom: 50px;
 }
 
 .togoodtogo1 {
-    margin-right: 200px;
-    margin-left: 200px;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+p {
+    line-height: 27px;
 }
