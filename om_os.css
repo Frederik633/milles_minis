@@ -22,3 +22,33 @@ h2 {
     object-fit: cover;
     object-position: 0 0;
 }
+
+.omstedetsection > .wp-block-group__inner-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    margin: 10px;
+    justify-items: center;
+}
+
+.omstedet1 img {
+    width: 500px;
+    height: 560px;
+    object-fit: cover;
+    object-position: 0 0;
+}
+
+.omstedet2 {
+    max-width: 500px;
+}
+
+
+.raavarer1 {
+    margin-right: 200px;
+    margin-left: 200px;
+}
+
+.togoodtogo1 {
+    margin-right: 200px;
+    margin-left: 200px;
+}
