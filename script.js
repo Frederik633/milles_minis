@@ -7,7 +7,7 @@ window.addEventListener("load", sidenVises);
 function sidenVises() {
     console.log("sidenVises");
 
-   /* document.querySelector(".menuknap").addEventListener("click", toggleMenu);*/
+    /* document.querySelector(".menuknap").addEventListener("click", toggleMenu);*/
 
 }
 
@@ -22,5 +22,6 @@ async function hentData() {
     console.log(content.title.rendered);
     console.log(content.content.rendered);
     document.querySelector("section").innerHTML = content.content.rendered;
+    document.querySelector("h1").textContent = content.title.rendered;
 
 }
