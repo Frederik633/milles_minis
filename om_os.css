@@ -1,4 +1,4 @@
-/****** HEADER *****/
+/*---HEADER---*/
 
 header nav {
     display: flex;
@@ -6,6 +6,7 @@ header nav {
     flex-wrap: wrap;
     flex-direction: column;
     background-color: lightblue;
+    padding: 40px;
 }
 
 header nav a {
@@ -26,7 +27,37 @@ header nav a img {
     max-height: 50px;
 }
 
+header p {
+    text-align: center;
+}
+
 /*---FOOTER---*/
+
+footer {
+    display: flex;
+    text-align: right;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: lightblue;
+    display: grid;
+    max-width: 3000px;
+    max-height: 300px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+footer img {
+    width: 30%;
+    height: auto;
+}
+
+footer a {
+    place-self: center;
+}
+
+footer a img {
+    margin-right: 700px;
+    max-height: 50px;
+}
 
 .fa {
     padding: 20px;
@@ -169,7 +200,7 @@ section {
 }
 
 .togoodtogo1 {
-/*    border-bottom: 1px groove black;*/
+    /*    border-bottom: 1px groove black;*/
 }
 
 p {

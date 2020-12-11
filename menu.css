@@ -1,4 +1,4 @@
-/****** HEADER *****/
+/*---HEADER---*/
 
 header nav {
     display: flex;
@@ -6,6 +6,7 @@ header nav {
     flex-wrap: wrap;
     flex-direction: column;
     background-color: lightblue;
+    padding: 40px;
 }
 
 header nav a {
@@ -26,7 +27,37 @@ header nav a img {
     max-height: 50px;
 }
 
+header p {
+    text-align: center;
+}
+
 /*---FOOTER---*/
+
+footer {
+    display: flex;
+    text-align: right;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: lightblue;
+    display: grid;
+    max-width: 3000px;
+    max-height: 300px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+footer img {
+    width: 30%;
+    height: auto;
+}
+
+footer a {
+    place-self: center;
+}
+
+footer a img {
+    margin-right: 700px;
+    max-height: 50px;
+}
 
 .fa {
     padding: 20px;
@@ -73,33 +104,34 @@ header nav a img {
         padding: 0.5rem;
         font-size: 0.9rem;
     }
+}
 
-    /*********** MENU/UDVALG STYLE **********/
+/*********** MENU/UDVALG STYLE **********/
 
-    h1 {
-        margin-top: 100px;
-        text-align: center;
-    }
+h1 {
+    margin-top: 100px;
+    text-align: center;
+}
 
-    .menutekst {
-        margin-left: 350px;
-        margin-right: 350px;
-    }
+.menutekst {
+    margin-left: 350px;
+    margin-right: 350px;
+}
 
-    .menubilleder > .wp-block-group__inner-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 10px;
-        margin: 10px;
-        justify-items: center;
-        border-bottom: 1px groove black;
-    }
+.menubilleder > .wp-block-group__inner-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    margin: 10px;
+    justify-items: center;
+    border-bottom: 1px groove black;
+}
 
 
-    .menubilleder img {
-        width: 350px;
-        height: 300px;
-        object-fit: cover;
-        object-position: 0 4;
-        margin-bottom: 60px;
-    }
+.menubilleder img {
+    width: 350px;
+    height: 300px;
+    object-fit: cover;
+    object-position: 0 4;
+    margin-bottom: 60px;
+}
