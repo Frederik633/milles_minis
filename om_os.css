@@ -108,6 +108,12 @@ footer a img {
 
 /***** OM OS CSS ******/
 
+h1,
+h2,
+p {
+    font-family: 'PT Serif', serif;
+}
+
 h1 {
     /*
     margin-top: 100px;
@@ -198,8 +204,6 @@ section {
     border: 1px solid black;
     padding: 20px;
 }
-
-
 
 
 p {
