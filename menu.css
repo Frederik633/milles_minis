@@ -113,6 +113,18 @@ h1 {
     text-align: center;
 }
 
+section {
+    margin-left: 100px;
+    margin-right: 100px;
+    /*    border: 2px solid black;*/
+    /*
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+*/
+    background-color: rgba(207, 221, 227, 0.2);
+
+}
+
 .menutekst {
     margin-left: 350px;
     margin-right: 350px;
