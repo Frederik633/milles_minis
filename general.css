@@ -1,54 +1,75 @@
+#splash {
+    background-color: #d6eeff;
+}
+
 /*---HEADER---*/
 
 header nav {
-    display: flex;
-    text-align: right;
-    flex-wrap: wrap;
-    flex-direction: column;
-    background-color: lightblue;
-    padding: 40px;
+    display: grid;
+    grid-template-columns: 3fr 1fr 1.5fr 1fr 1fr 1.5fr;
+    background-color: #72a0c1;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 header nav a {
-    font-size: 1.7rem;
+    font-size: 1.4rem;
     text-decoration: none;
-}
-
-header a {
     font-family: sans-serif;
-    font-size: 0.1rem;
-    padding: 0 0.8rem;
-    font-size: 1rem;
-    color: black;
+    color: #fceee3;
 }
 
-header nav a img {
-    margin-right: 700px;
-    max-height: 50px;
+header img {
+    max-width: 30%;
+    padding-left: 40px;
 }
 
-
+header #menu {}
 
 /*---FOOTER---*/
 
 footer {
     text-align: center;
-    background-color: lightblue;
+    background-color: #72a0c1;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    padding-top: 60px;
+    padding-bottom: 30px;
 }
 
 footer img {
-    width: 50%;
+    width: 30%;
 }
 
 footer a {
     place-self: center;
 }
 
-footer .SoMe {
-    padding-top: 50px;
+footer p {
+    font-family: sans-serif;
+    color: #fceee3;
 }
+
+footer #SoMe {
+    padding-top: 30px;
+}
+
+footer #abningstider {
+    padding-top: 10px;
+}
+
+footer #kontrolrapport {
+    padding-top: 30px;
+}
+
+footer #kontrolrapport img {
+    width: 50%;
+}
+
+footer #kontakt_info {
+    padding-top: 30px;
+}
+
 
 .fa {
     padding: 20px;
@@ -75,24 +96,3 @@ footer .SoMe {
 }
 
 /*---MEDIA QUERIES---*/
-
-@media (min-width: 777px) {
-    header {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        background-color: lightblue;
-    }
-
-    header nav {
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    header nav a {
-        border-right: 0.2rem;
-        padding: 0.5rem;
-        font-size: 0.9rem;
-    }
-}
