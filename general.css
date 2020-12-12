@@ -27,36 +27,27 @@ header nav a img {
     max-height: 50px;
 }
 
-header p {
-    text-align: center;
-}
+
 
 /*---FOOTER---*/
 
 footer {
-    display: flex;
-    text-align: right;
-    flex-wrap: wrap;
-    flex-direction: column;
+    text-align: center;
     background-color: lightblue;
     display: grid;
-    max-width: 3000px;
-    max-height: 300px;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
 footer img {
-    width: 30%;
-    height: auto;
+    width: 50%;
 }
 
 footer a {
     place-self: center;
 }
 
-footer a img {
-    margin-right: 700px;
-    max-height: 50px;
+footer .SoMe {
+    padding-top: 50px;
 }
 
 .fa {
