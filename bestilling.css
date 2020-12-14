@@ -1,3 +1,10 @@
+/*---BESTILLINGS INFO---*/
+
+#bestillinginfo {
+    display: grid;
+    grid-area: bestillinginfo;
+}
+
 /*---BESTILLINGSFORMULAR---*/
 
 input[type=text],
@@ -26,11 +33,29 @@ input[type=submit]:hover {
     background-color: lightblue;
 }
 
-.bestilling {
+#bestilling {
     border-radius: 5px;
-    background-color: #f2f2f2;
-    padding-left: 300px;
-    padding-right: 300px;
+    padding-left: 400px;
+    padding-right: 400px;
     padding-top: 100px;
     padding-bottom: 100px;
+    display: grid;
+    grid-area: bestilling;
+}
+
+/*---GRID---*/
+
+.grid {
+    grid-template-areas:
+        'bestillinginfo bestilling';
+}
+
+/*---MEDIA QUERIES ---*/
+
+@media (max-width: 700px) {
+    .grid {
+        grid-template-areas:
+            'bestillinginfo'
+            'bestilling';
+    }
 }
