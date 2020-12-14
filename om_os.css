@@ -47,12 +47,12 @@ section {
 }
 
 .omos1 {
-    max-width: 500px;
+    max-width: 400px;
 }
 
 .omos2 img {
-    width: 500px;
-    height: 560px;
+    width: 400px;
+    height: 460px;
     object-fit: cover;
     object-position: 0 0;
 }
@@ -67,14 +67,15 @@ section {
 }
 
 .omstedet1 img {
-    width: 500px;
-    height: 560px;
+    width: 400px;
+    height: 460px;
     object-fit: cover;
     object-position: 0 0;
 }
 
 .omstedet2 {
     max-width: 500px;
+    margin-right: 50px;
 }
 
 
@@ -100,4 +101,5 @@ section {
 
 p {
     line-height: 30px;
+    font-size: 14px;
 }
