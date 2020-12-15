@@ -21,28 +21,29 @@
             <a href="kontakt_os.html">CAKETRUCK</a>
         </nav>
     </header>
+    <main>
+        <section id="bestilling_info"></section>
 
-    <section id="bestilling_info"></section>
+        <section id="bestilling">
+            <form action="action_page.php">
 
-    <section id="bestilling">
-        <form action="action_page.php">
+                <label for="fornavn">Fornavn</label>
+                <input type="text" id="fnavn" name="fornavn" placeholder="Dit fornavn...">
 
-            <label for="fornavn">Fornavn</label>
-            <input type="text" id="fnavn" name="fornavn" placeholder="Dit fornavn...">
+                <label for="efternavn">Efternavn</label>
+                <input type="text" id="enavn" name="efternavn" placeholder="Dit efternavn...">
 
-            <label for="efternavn">Efternavn</label>
-            <input type="text" id="enavn" name="efternavn" placeholder="Dit efternavn...">
+                <label for="adresse">Adresse</label>
+                <input type="text" id="address" name="adresse" placeholder="Din adresse...">
 
-            <label for="adresse">Adresse</label>
-            <input type="text" id="address" name="adresse" placeholder="Din adresse...">
+                <label for="bestilling">Bestilling</label>
+                <textarea id="bestilling" name="bestilling" placeholder="Skriv din bestilling..." style="height:200px"></textarea>
 
-            <label for="bestilling">Bestilling</label>
-            <textarea id="bestilling" name="bestilling" placeholder="Skriv din bestilling..." style="height:200px"></textarea>
+                <input type="submit" value="Bestil">
 
-            <input type="submit" value="Bestil">
-
-        </form>
-    </section>
+            </form>
+        </section>
+    </main>
 
 
     <footer>

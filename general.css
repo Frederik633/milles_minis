@@ -1,3 +1,16 @@
+body {
+    margin: 0;
+}
+
+figure {
+    display: block;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+
 /*---HEADER---*/
 
 header nav {
@@ -26,9 +39,16 @@ header img {
 
 /*---SPLASH---*/
 
+#splashbillede img {
+    width: 100%;
+}
+
 #splashbillede {
-    height: 110.4vh;
-    margin-left: -7px;
+    margin-top: 110px;
+}
+
+main {
+    margin-top: 110px;
 }
 
 /*---FOOTER---*/
@@ -37,9 +57,8 @@ footer {
     text-align: center;
     background-color: #72a0c1;
     position: static;
-    margin-bottom: -8px;
-    margin-left: -8px;
-    margin-right: -8px;
+
+
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     padding-top: 60px;
@@ -56,7 +75,7 @@ footer a {
 
 footer p {
     font-family: sans-serif;
-    color: #fceee3;
+    color: black;
 }
 
 footer #SoMe {
