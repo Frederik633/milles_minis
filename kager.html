@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="">
+</head>
+
+<section>
+
+</section>
+
+<body>
+    <script src="script.js"></script>
+
+    <script>
+        let id = 63;
+
+        let retter;
+        let container = document.querySelector("#container");
+        let temp = document.querySelector("template");
+
+        document.addEventListener("DOMContentLoaded", start);
+
+        function start() {
+
+            hentKage();
+
+            // document.querySelector(".menuknap").addEventListener("click", toggleMenu); }
+
+            // async function getTheCategories() {
+            // let url = "http://vais.dk/kea/02_SEM/tema9/ihs/wordpress/wp-json/wp/v2/categories";
+            // let jsonData = await fetch(url);
+            // theCategories = await jsonData.json();
+            // generateCategoryBTNs();
+            //
+            // hentFag();
+            //
+        }
+
+
+        async function hentKage() {
+
+            let url = "http://vais.dk/kea/02_SEM/eksamen/wordpress/wp-json/wp/v2/kage?per_page=100";
+            let jsonData = await fetch(url);
+            underFag = await jsonData.json();
+            console.log("LOADING DONE");
+
+
+            document.querySelector(".filter_nav h3").click();
+
+
+        }
+
+
+        function generateCategoryBTNs() {
+
+            let dest = document.querySelector(".filter_nav");
+            let temp = document.querySelector("#filter_btns_tmpl");
+
+            // document.querySelector(".filter_nav h3").dataset.id = "alle";
+            // document.querySelector(".filter_nav h3").addEventListener("click", categoryClick);
+            theCategories.forEach(category => {
+                // fjern uncategorised
+                if (category.slug != "uncategorised") {
+                    let klon = temp.cloneNode(true).content;
+                    klon.querySelector("h3").textContent = category.name;
+                    klon.querySelector("h3").dataset.name = category.name;
+                    klon.querySelector("h3").dataset.id = category.id;
+
+                    klon.querySelector("h3").addEventListener("click", categoryClick)
+                    dest.appendChild(klon);
+                }
+
+            })
+        }
+
+        function categoryClick() {
+
+            console.log(this.dataset.id);
+
+
+            filterContent(this.dataset.id);
+        }
+
+
+        function filterContent(theFilter) {
+
+
+
+            let filtrerede;
+            if (theFilter == "alle") {
+                filtrerede = underFag;
+            } else {
+                filtrerede = underFag.filter(fag => fag.categories[0] == theFilter);
+
+            }
+            console.log(filtrerede)
+            showPosts(filtrerede);
+        }
+
+        function showPosts(theFilteredJson) {
+            let dest = document.querySelector(".fagene");
+            let temp = document.querySelector("#fag_tmpl");
+            dest.innerHTML = "";
+            theFilteredJson.forEach(fag => {
+                console.log(fag)
+                let klon = temp.cloneNode(true).content;
+                klon.querySelector("h2").textContent = fag.title.rendered;
+
+                klon.querySelector(".fag").addEventListener("click", function() {
+                    visDetaljer(fag.id)
+                });
+
+
+                dest.appendChild(klon);
+
+            });
+
+
+        }
+
+        function dishClick(id) {
+            console.log("ID", id);
+        }
+
+        function visUnderfag() {
+            const templatePointer = document.querySelector("template");
+            const listPointer = document.querySelector(".fag");
+            listPointer.innerHTML = "";
+            underFag.feed.entry.forEach(fag => {
+                //console.log(fag);
+                const minKlon = templatePointer.cloneNode(true).content;
+                klon.querySelector("h2").textContent = fag.title.rendered;
+                klon.querySelector("article").addEventListener("click", () => visDetaljer(fag));
+                klon.querySelector(".ugeskema").src = fag.ugeskema.guid;
+                listPointer.appendChild(minKlon);
+
+            })
+
+        }
+
+        function visDetaljer(fagID) {
+            let popup = document.querySelector(".popup");
+
+            let faget = underFag.filter(fag => fag.id == fagID)[0];
+            console.log("faget", faget)
+
+            popup.style.display = "block";
+
+            document.querySelector(".popup-fag").textContent = faget.title.rendered;
+            document.querySelector(".popup-beskrivelse").innerHTML = faget.content.rendered;
+            document.querySelector(".popup-img").src = faget.billede.guid;
+
+            document.querySelector("#luk").addEventListener("click", () => popup.style.display = "none");
+
+            window.onclick = function(event) {
+                if (event.target == popup) {
+                    popup.style.display = "none";
+                }
+            }
+
+        };
+
+
+        function toggleMenu() {
+            console.log("toggleMenu");
+
+            document.querySelector(".menu").classList.toggle("hidden");
+
+            let erSkjult = document.querySelector(".menu").classList.contains("hidden");
+
+            if (erSkjult == true) {
+                document.querySelector(".menuknap").innerHTML = "<img src='burgermenu.png' alt='menu logo'>";
+
+            } else {
+                document.querySelector(".menuknap").innerHTML = "<img src='kryds.png' alt='menu x'>";
+            }
+        }
+    </script>
+</body></html>
