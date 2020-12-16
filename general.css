@@ -1,11 +1,13 @@
+main {
+    margin-top: 110px;
+}
+
 /*---HEADER---*/
 
 header nav {
     display: grid;
     grid-template-columns: 3.1fr 0.9fr 1.4fr 1fr 1.2fr 1.5fr;
     background-color: #72a0c1;
-    padding-top: 40px;
-    padding-bottom: 40px;
     position: fixed;
     top: 0;
     left: 0;
@@ -13,7 +15,7 @@ header nav {
 }
 
 header nav a {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     text-decoration: none;
     font-family: 'Barlow Condensed', sans-serif;
     color: #fceee3;
@@ -23,8 +25,6 @@ header img {
     max-width: 60%;
     padding-left: 40px;
 }
-
-
 
 /*---FOOTER---*/
 
@@ -46,61 +46,45 @@ footer p {
     color: black;
 }
 
+footer #abningstider,
+#kontakt {
+    text-align: left;
+    padding-left: 30px;
+}
+
 footer #SoMe {
-    padding-top: 30px;
-}
-
-footer #SoMe img {
-    width: 20%;
-}
-
-footer #abningstider {
     padding-top: 10px;
 }
 
-footer #logo img {
+footer #SoMe img {
     width: 30%;
+
+}
+
+footer #logo img {
+    width: 40%;
 }
 
 footer #kontrolrapport {
-    padding-top: 30px;
+    padding-top: 26px;
+    padding-right: 5px;
 }
 
 footer #kontrolrapport img {
-    width: 50%;
+    width: 40%;
 }
 
-footer #kontakt_info {
-    padding-top: 30px;
-}
+/*---MEDIA QUERIES---*/
 
-footer #kontakt_info img {
-    width: 16%;
-}
+@media (max-width: 700px) {
+    footer {
+        grid-template-columns: 1fr;
+    }
 
+    footer #abningstider {
+        text-align: center;
+    }
 
-/*.fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 18px;
-    text-align: center;
-    text-decoration: none;
-    margin: 5px 2px;
-    border-radius: 50%;
-}
-
-.fa:hover {
-    opacity: 0.7;
-}
-
-.fa-facebook {
-    background: #3B5998;
-    color: white;
-}
-
-.fa-instagram {
-    background: #125688;
-    color: white;*/
-}
-
-/*---MEDIA QUERIES ---*/
+    footer #kontakt {
+        text-align: center;
+    }

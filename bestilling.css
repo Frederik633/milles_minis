@@ -6,6 +6,13 @@
     padding-left: 250px;
 }
 
+
+#gavekort_to img {
+    width: 100%;
+    height: 100%;
+    padding-top: 10px;
+}
+
 /*---BESTILLINGSFORMULAR---*/
 
 input[type=text],
@@ -21,7 +28,7 @@ textarea {
 }
 
 input[type=submit] {
-    background-color: darkblue;
+    background-color: #72a0c1;
     color: white;
     padding: 12px 20px;
     border: none;
@@ -29,7 +36,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-    background-color: lightblue;
+    background-color: #ccc;
 }
 
 #bestilling textarea {
@@ -50,10 +57,29 @@ main {
     grid-template-columns: 1fr 1fr;
 }
 
+section {
+    margin-left: 150px;
+    margin-right: 150px;
+    background-color: #E9F4FB;
+}
+
 /*---MEDIA QUERIES---*/
 
 @media (max-width: 700px) {
     main {
         grid-template-columns: 1fr;
+        padding-left: 40px;
+        padding-right: 80px;
     }
 }
+
+@media (max-width: 700px) {
+
+    #bestilling_info,
+    input[type=text],
+    select,
+    textarea {
+        padding-left: 5px;
+        padding-right: 80px;
+
+    }
