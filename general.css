@@ -1,3 +1,5 @@
+/*---GENERAL---*/
+
 body {
     margin: 0;
 }
@@ -10,6 +12,9 @@ figure {
     margin-inline-end: 0px;
 }
 
+main {
+    margin-top: 110px;
+}
 
 /*---HEADER---*/
 
@@ -28,12 +33,12 @@ header nav {
 header nav a {
     font-size: 1.4rem;
     text-decoration: none;
-    font-family: sans-serif;
+    font-family: 'Barlow Condensed', sans-serif;
     color: #fceee3;
 }
 
 header img {
-    max-width: 5%;
+    max-width: 60%;
     padding-left: 40px;
 }
 
@@ -44,29 +49,19 @@ header img {
 }
 
 #splashbillede {
-    margin-top: 110px;
-}
-
-main {
-    margin-top: 110px;
+    margin-top: 100px;
+    margin-bottom: -20px;
 }
 
 /*---FOOTER---*/
 
 footer {
     text-align: center;
-    background-color: #72a0c1;
     position: static;
-
-
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     padding-top: 60px;
     padding-bottom: 30px;
-}
-
-footer img {
-    width: 30%;
 }
 
 footer a {
@@ -82,8 +77,16 @@ footer #SoMe {
     padding-top: 30px;
 }
 
+footer #SoMe img {
+    width: 20%;
+}
+
 footer #abningstider {
     padding-top: 10px;
+}
+
+footer #logo img {
+    width: 30%;
 }
 
 footer #kontrolrapport {
@@ -98,8 +101,12 @@ footer #kontakt_info {
     padding-top: 30px;
 }
 
+footer #kontakt_info img {
+    width: 16%;
+}
 
-.fa {
+
+/*.fa {
     padding: 20px;
     font-size: 30px;
     width: 18px;
@@ -120,5 +127,7 @@ footer #kontakt_info {
 
 .fa-instagram {
     background: #125688;
-    color: white;
+    color: white;*/
 }
+
+/*---MEDIA QUERIES ---*/
