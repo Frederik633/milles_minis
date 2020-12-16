@@ -1,6 +1,8 @@
 main {
+    margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    max-width: 75%;
 }
 
 figure {
@@ -48,14 +50,31 @@ input[type=submit]:hover {
 .container {
     margin: 0px auto;
     border-radius: 5px;
-    background-color: #f2f2f2;
+    background-color: #E9F4FB;
     padding-left: 50px;
     padding-right: 50px;
     padding-top: 100px;
     padding-bottom: 100px;
 }
 
+#adresse {
+    margin: 0px auto;
+    border-radius: 5px;
+    background-color: white;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+
+
 /* Tekst om Caketrucken */
+
+.caketruck-txt {}
+
+.caketruckimg {}
+
 
 h1 {
     padding-top: 150px;
@@ -65,16 +84,21 @@ h1 {
     text-align: center;
 }
 
-.mapouter {
-    position: relative;
-    text-align: right;
-    height: 500px;
-    width: 600px;
+h2 {
+    text-align: center;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 2rem;
 }
 
-.gmap_canvas {
-    overflow: hidden;
-    background: none !important;
-    max-height: 500px;
-    max-width: 600px;
+p {
+    line-height: 30px;
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+table {
+    font-weight: 500;
+    line-height: 30px;
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
 }
