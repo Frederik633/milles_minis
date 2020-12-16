@@ -42,7 +42,13 @@ footer {
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 }
 
+.overskrift {
+    text-align: center;
+}
 
+.beskrivelse {
+    text-align: center;
+}
 
 
 /* MEDIA Q */
