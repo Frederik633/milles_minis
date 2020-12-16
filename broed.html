@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="kager.css">
+</head>
+
+<header>
+    <nav>
+        <a href="index.html"><img src="mmlogo.png" alt="Mille's Minis logo"></a>
+        <a href="menu.html">MENU</a>
+        <a href="bestilling.html">BESTILLING</a>
+        <a href="om_os.html">OM OS</a>
+        <a href="kontakt_os.html">KONTAKT</a>
+        <a href="caketruck.html">CAKETRUCK</a>
+    </nav>
+</header>
+
+<section id="container"></section>
+
+<template>
+
+    <article class="broed">
+        <h2 class="navn"></h2>
+        <p class="beskrivelse"></p>
+
+    </article>
+
+</template>
+
+<footer>
+    <div id="SoMe">
+        <img src="facebook.png" alt="Mille's Minis facebook">
+        <img src="instagram.png" alt="Mille's Minis instagram">
+    </div>
+    <div id="abningstider">
+        <p>
+            ÅBNINGSTIDER
+            <br>
+            Tirsdag-fredag: 08.00-17.00
+            <br>
+            Lørdag-søndag: 08.00-16.00
+            <br>
+            Mandag: LUKKET
+        </p>
+    </div>
+    <div id="logo">
+        <img src="mmlogo2.png" alt="">
+
+        <p>
+            Teglholmens Østkaj 9<br>
+            2450 København
+        </p>
+    </div>
+    <div id="kontrolrapport">
+        <img src="kontrolrapport.jpg" alt="">
+    </div>
+    <div id="kontakt_info">
+
+        <img src="phone.png" alt="Mille's telefon">
+
+        <img src="email.png" alt="Mille's email">
+
+    </div>
+</footer>
+
+
+<body>
+    <script>
+        let broeds;
+        let container = document.querySelector("#container");
+        let temp = document.querySelector("template");
+
+        document.addEventListener("DOMContentLoaded", hentData);
+
+
+
+        //        async function hentKage() {
+        //
+        //            let url = "http://vais.dk/kea/02_SEM/eksamen/wordpress/wp-json/wp/v2/kage?per_page=100";
+        //            let jsonData = await fetch(url);
+        //            underFag = await jsonData.json();
+        //            console.log("LOADING DONE");
+        //
+        //
+        //            document.querySelector(".filter_nav h3").click();
+        //
+        //
+        //        }
+
+        const link = "http://vais.dk/kea/02_SEM/eksamen/wordpress/wp-json/wp/v2/brd";
+
+        async function hentData() {
+            const respons = await fetch(link);
+            broeds = await respons.json();
+            vis(broeds);
+        }
+
+        function vis(broeds) {
+            //Løber igennem array "destinationer" fra JSON
+            container.innerHTML = "";
+            broeds.forEach(broed => {
+                console.log(broed);
+                const klon = temp.cloneNode(true).content;
+                klon.querySelector(".navn").textContent = broed.title.rendered;
+                klon.querySelector(".beskrivelse").innerHTML = broed.content.rendered;
+                //            klon.querySelector("img").src = "img/billeder/" + dest.gsx$billede.$t + ".jpg";
+                //            klon.querySelector(".indbyggertal").textContent += dest.gsx$indbyggertal.$t;
+                //            klon.querySelector(".vejr").textContent += dest.gsx$vejr.$t;
+                //            klon.querySelector(".funfact").textContent += dest.gsx$funfact.$t;
+                //            klon.querySelector(".pris").textContent += dest.gsx$pris.$t;
+
+                klon.querySelector("article").addEventListener("click", () => visDetaljer(kage));
+
+                container.appendChild(klon);
+
+
+
+            })
+
+            broeds.feed.entry.forEach(broed => {
+
+                if (id == broed.gsx$id.$t) {
+                    visDetaljer(broed)
+                }
+            })
+
+        }
+
+        function visDetaljer() {
+            location.href = `singleview.html?id=${broed.gsx$id.$t}`;
+
+        }
+    </script>
+</body></html>
