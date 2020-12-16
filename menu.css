@@ -34,7 +34,7 @@ section {
     grid-gap: 10px;
     margin: 10px;
     justify-items: center;
-/*    border-bottom: 1px groove black;*/
+    /*    border-bottom: 1px groove black;*/
 }
 
 
@@ -72,4 +72,21 @@ section {
 
 .knaptekst img:hover {
     opacity: 30%;
+}
+
+
+/******** MEDIA QUERIES *********/
+
+
+@media only screen and (max-width: 800px) {
+    section {
+        margin-right: 5px;
+        margin-left: 5px;
+        background-color: white;
+    }
+
+    .menutekst {
+        margin-right: -10px;
+        margin-left: -10px;
+    }
 }
