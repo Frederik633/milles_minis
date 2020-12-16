@@ -18,6 +18,8 @@ h1 {
 
 h2 {
     text-align: center;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 2rem;
 }
 
 section {
@@ -96,5 +98,6 @@ section {
 
 p {
     line-height: 30px;
-    font-size: 14px;
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
 }
