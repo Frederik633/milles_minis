@@ -20,13 +20,27 @@
     </nav>
 </header>
 
+<div class="overskrift">
+
+    <h1>KAGER</h1>
+
+
+</div>
+
+<div class="beskrivelse">
+    <p>Introtekst til de forskellige kategorier samt call to action knap, som leder sig til man klikker ind på udvalget og lader sig friste til hvilken slags kage, man kunne stille sulten med</p>
+</div>
+
 <section id="container"></section>
 
 <template>
 
     <article class="kage">
-        <h2 class="navn"></h2>
-        <p class="beskrivelse"></p>
+
+        <a href="">
+            <h2 class="navn"></h2>
+            <p class="beskrivelse"></p>
+        </a>
 
     </article>
 
@@ -78,20 +92,6 @@
         document.addEventListener("DOMContentLoaded", hentData);
 
 
-
-        //        async function hentKage() {
-        //
-        //            let url = "http://vais.dk/kea/02_SEM/eksamen/wordpress/wp-json/wp/v2/kage?per_page=100";
-        //            let jsonData = await fetch(url);
-        //            underFag = await jsonData.json();
-        //            console.log("LOADING DONE");
-        //
-        //
-        //            document.querySelector(".filter_nav h3").click();
-        //
-        //
-        //        }
-
         const link = "http://vais.dk/kea/02_SEM/eksamen/wordpress/wp-json/wp/v2/kage?per_page=100";
 
         async function hentData() {
@@ -109,10 +109,6 @@
                 klon.querySelector(".navn").textContent = kage.title.rendered;
                 klon.querySelector(".beskrivelse").innerHTML = kage.content.rendered;
                 //            klon.querySelector("img").src = "img/billeder/" + dest.gsx$billede.$t + ".jpg";
-                //            klon.querySelector(".indbyggertal").textContent += dest.gsx$indbyggertal.$t;
-                //            klon.querySelector(".vejr").textContent += dest.gsx$vejr.$t;
-                //            klon.querySelector(".funfact").textContent += dest.gsx$funfact.$t;
-                //            klon.querySelector(".pris").textContent += dest.gsx$pris.$t;
 
                 klon.querySelector("article").addEventListener("click", () => visDetaljer(kage));
 
