@@ -1,12 +1,6 @@
 /*********** MENU/UDVALG STYLE **********/
 
 
-h1,
-h2,
-p {
-    font-family: 'PT Serif', serif;
-}
-
 h1 {
     margin-top: 100px;
     text-align: center;
@@ -35,11 +29,12 @@ section {
 
 .menubilleder > .wp-block-group__inner-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    /*    grid-template-columns: 1fr 1fr 1fr;*/
+    grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
     grid-gap: 10px;
     margin: 10px;
     justify-items: center;
-    border-bottom: 1px groove black;
+    /*    border-bottom: 1px groove black;*/
 }
 
 
@@ -49,4 +44,49 @@ section {
     object-fit: cover;
     object-position: 0 4;
     margin-bottom: 60px;
+    display: grid;
+    grid-area: 1/1;
+}
+
+.knaptekst {
+    display: grid;
+}
+
+.knaptekst figcaption {
+    display: grid;
+    grid-area: 1/1;
+    place-self: center;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    font-size: 1.8rem;
+    font-family: "Barlow Condensed", sans-serif;
+    text-shadow: 3px 3px 6px #000;
+}
+
+.knaptekst a {
+    display: grid;
+    grid-area: 1/1;
+    place-self: center;
+}
+
+.knaptekst img:hover {
+    opacity: 30%;
+}
+
+
+/******** MEDIA QUERIES *********/
+
+
+@media only screen and (max-width: 800px) {
+    section {
+        margin-right: 5px;
+        margin-left: 5px;
+        background-color: white;
+    }
+
+    .menutekst {
+        margin-right: -10px;
+        margin-left: -10px;
+    }
 }

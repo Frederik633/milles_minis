@@ -1,1 +1,28 @@
+/*---GENERAL---*/
 
+body {
+/*    margin: 0;*/
+}
+
+figure {
+    display: block;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+main {
+    margin-top: 110px;
+}
+
+/*---SPLASH---*/
+
+#splashbillede img {
+    width: 100%;
+}
+
+#splashbillede {
+    margin-top: 100px;
+    margin-bottom: -20px;
+}
