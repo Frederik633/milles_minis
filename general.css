@@ -19,11 +19,13 @@ header nav a {
     text-decoration: none;
     font-family: 'Barlow Condensed', sans-serif;
     color: #fceee3;
+    align-self: center;
 }
 
 header img {
     max-width: 60%;
     padding-left: 40px;
+    align-self: center;
 }
 
 /*---FOOTER---*/
@@ -75,6 +77,25 @@ footer #kontrolrapport img {
 }
 
 /*---MEDIA QUERIES---*/
+
+.logo2 {
+    display: none;
+    max-width: 100%;
+    padding-left: 40px;
+}
+
+@media (max-width: 550px) {
+    .logo1 {
+        display: none;
+    }
+
+    .logo2 {
+        display: block;
+        max-width: 100%;
+        padding-left: 40px;
+        align-self: center;
+    }
+}
 
 @media (max-width: 700px) {
     footer {
