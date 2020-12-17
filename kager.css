@@ -23,6 +23,7 @@ p {
 
 body {
     background-color: #E9F4FB;
+
 }
 
 footer {
@@ -47,20 +48,11 @@ footer {
     display: grid;
     grid-gap: 50px;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    background-color: #E9F4FB;
+
 
 }
 
-#container a {
-    text-decoration: none;
-    color: black;
-    opacity: 0.25;
-    opacity: 0.25;
-    transition: opacity 0.4s;
-    transition-property: opacity;
-    transition-duration: 0.4s;
-    transition-timing-function: ease;
-    transition-delay: 0s;
-}
 
 
 
