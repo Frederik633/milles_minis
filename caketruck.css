@@ -88,3 +88,10 @@ p {
         grid-template-columns: 1fr;
     }
 }
+
+
+h2 {
+    text-align: center;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 2rem;
+}
