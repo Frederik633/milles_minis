@@ -16,7 +16,7 @@
 <body>
     <header>
         <nav>
-            <a href="index.html"><img src="mmlogo.png" alt="Mille's Minis logo"></a>
+            <a href="index.html"><img src="mmlogo.png" alt="Mille's Minis logo" class="logo1"><img src="mmlogo2.png" alt="Mille's Minis logo" class="logo2"></a>
             <a href="menu.html">MENU</a>
             <a href="bestilling.html">BESTILLING</a>
             <a href="om_os.html">OM OS</a>
@@ -37,31 +37,26 @@
 
         <section id="bestilingsformular">
 
-            <div class="container">
+            <form action="action_page.php">
 
+                <label for="fornavn">Fornavn</label>
+                <input type="text" id="fnavn" name="fornavn" placeholder="Dit fornavn...">
 
+                <label for="efternavn">Efternavn</label>
+                <input type="text" id="enavn" name="efternavn" placeholder="Dit efternavn...">
 
-                <form action="action_page.php">
+                <label for="adresse">E-mail</label>
+                <input type="text" id="email" name="email" placeholder="Din e-mail...">
 
-                    <label for="fornavn">Dit navn</label>
-                    <input type="text" id="fnavn" name="fornavn" placeholder="Dit navn...">
+                <label for="adresse">Adresse</label>
+                <input type="text" id="address" name="adresse" placeholder="Din adresse...">
 
-                    <label for="efternavn">Din e-mail</label>
-                    <input type="text" id="enavn" name="efternavn" placeholder="Din e-mail...">
+                <label for="Dato og tidspunkt">Dato og tidspunkt (fra og til)</label>
+                <textarea id="dato og tidspunkt" name="dato og tidspunkt til og fra" placeholder="Dato og tidspunkt med et tidsrum fra hvornår og til hvornår man vil leje caketrucken..."></textarea>
 
-                    <label for="efternavn">Din adresse</label>
-                    <input type="text" id="enavn" name="efternavn" placeholder="Din adresse...">
+                <input type="submit" value="Bestil">
 
-                    <label for="adresse">Dato og tidspunkt (til og fra)</label>
-                    <input type="text" id="address" name="adresse" placeholder="Dato og tidspunkt (til og fra)...">
-
-                    <label for="bestilling">Fortæl om din begivenhed og særlige ønsker</label>
-                    <textarea id="bestilling" name="bestilling" placeholder="Fortæl om din begivenhed og særlige ønsker..." style="height:200px"></textarea>
-
-                    <input type="submit" value="Send">
-
-                </form>
-            </div>
+            </form>
         </section>
 
     </main>
