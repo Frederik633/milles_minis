@@ -1,9 +1,5 @@
 /*---GENERAL---*/
 
-body {
-/*    margin: 0;*/
-}
-
 figure {
     display: block;
     margin-block-start: 0em;
@@ -20,9 +16,7 @@ main {
 
 #splashbillede img {
     width: 100%;
-}
-
-#splashbillede {
-    margin-top: 100px;
-    margin-bottom: -20px;
+    height: auto;
+    object-fit: cover;
+    object-position: 5px 10%;
 }
