@@ -6,11 +6,17 @@
     padding-left: 250px;
 }
 
-
 #gavekort_to img {
     width: 100%;
     height: 100%;
-    padding-top: 10px;
+}
+
+figure {
+    display: block;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
 
 /*---BESTILLINGSFORMULAR---*/
@@ -25,6 +31,7 @@ textarea {
     margin-top: 6px;
     margin-bottom: 16px;
     resize: vertical;
+    font-family: sans-serif;
 }
 
 input[type=submit] {
@@ -41,13 +48,11 @@ input[type=submit]:hover {
 
 #bestilling textarea {
     height: 200px;
-
 }
 
 #bestilling {
-    padding-top: 30px;
-    padding-left: 0px;
-    padding-right: 250px;
+    margin-top: 30px;
+    margin-right: 250px;
 }
 
 /*---GRID---*/
@@ -55,31 +60,52 @@ input[type=submit]:hover {
 main {
     display: grid;
     grid-template-columns: 1fr 1fr;
-}
-
-section {
-    margin-left: 150px;
-    margin-right: 150px;
-    background-color: #E9F4FB;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-bottom: 30px;
+    background-color: #e9f4fb;
 }
 
 /*---MEDIA QUERIES---*/
 
-@media (max-width: 700px) {
+@media (max-width: 1100px) {
     main {
         grid-template-columns: 1fr;
-        padding-left: 40px;
-        padding-right: 80px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }
 
-@media (max-width: 700px) {
-
-    #bestilling_info,
-    input[type=text],
-    select,
-    textarea {
-        padding-left: 5px;
-        padding-right: 80px;
-
+@media (max-width: 800px) {
+    main {
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-top: 50px;
+        background-color: #e9f4fb;
     }
+
+    #bestilling_info {
+        padding-right: 300px;
+    }
+
+    #gavekort_to img {
+        width: 87%;
+        height: 87%;
+    }
+
+    #bestilling {
+        padding-left: 8px;
+        padding-right: 10px;
+    }
+
+
+    @media (max-width: 700px) {
+
+        #bestilling_info,
+        input[type=text],
+        select,
+        textarea {
+            padding-left: 5px;
+            padding-right: 80px;
+
+        }
