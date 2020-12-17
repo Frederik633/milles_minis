@@ -12,7 +12,13 @@ h2 {
 }
 
 h1 {
-    font-size: 1.5rem;
+    font-size: 1.65rem;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+
 }
 
 body {
@@ -29,6 +35,8 @@ footer {
     object-fit: cover;
 
 }
+
+
 
 #container {
     width: 70vw;
@@ -62,6 +70,12 @@ footer {
 
 .beskrivelse {
     text-align: center;
+}
+
+.kage {
+    background-color: white;
+    padding-bottom: 20px;
+    border-radius: 5px;
 }
 
 
