@@ -11,14 +11,15 @@ h2 {
 }
 
 section {
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 150px;
+    margin-right: 150px;
     /*    border: 2px solid black;*/
     /*
     border-right: 2px solid black;
     border-left: 2px solid black;
 */
-    background-color: rgba(207, 221, 227, 0.2);
+    /*    background-color: rgba(207, 221, 227, 0.2);*/
+    background-color: #E9F4FB;
 
 }
 
@@ -31,16 +32,15 @@ section {
     display: grid;
     /*    grid-template-columns: 1fr 1fr 1fr;*/
     grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
-    grid-gap: 10px;
-    margin: 10px;
+    grid-gap: 1px;
     justify-items: center;
     /*    border-bottom: 1px groove black;*/
 }
 
 
 .menubilleder img {
-    width: 350px;
-    height: 300px;
+    width: 300px;
+    height: 250px;
     object-fit: cover;
     object-position: 0 4;
     margin-bottom: 60px;
