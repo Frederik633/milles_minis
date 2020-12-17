@@ -1,8 +1,12 @@
 main {
-    margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     max-width: 75%;
+    padding-bottom: 30px;
+    background-color: #e9f4fb;
+    margin-left: 150px;
+    margin-right: 150px;
+}
 }
 
 figure {
@@ -13,11 +17,6 @@ figure {
     margin-inline-end: 0px;
 }
 
-@media (max-width: 800px) {
-    main {
-        grid-template-columns: 1fr;
-    }
-}
 
 
 /* Bestilling */
@@ -28,33 +27,32 @@ textarea {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
-    border-radius: 4px;
     box-sizing: border-box;
     margin-top: 6px;
     margin-bottom: 16px;
     resize: vertical;
+    font-family: sans-serif;
 }
 
 input[type=submit] {
-    background-color: darkblue;
+    background-color: #72a0c1;
     color: white;
+    padding: 12px 20px;
     border: none;
-    border-radius: 4px;
     cursor: pointer;
 }
 
 input[type=submit]:hover {
-    background-color: lightblue;
+    background-color: #ccc;
 }
 
-.container {
-    margin: 0px auto;
-    border-radius: 5px;
-    background-color: #E9F4FB;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 100px;
-    padding-bottom: 100px;
+#bestilling textarea {
+    height: 200px;
+}
+
+#bestilling {
+    margin-top: 30px;
+    margin-right: 250px;
 }
 
 /* Tekst om Caketrucken */
@@ -65,7 +63,6 @@ input[type=submit]:hover {
 
 
 h1 {
-    padding-top: 150px;
     font-family: 'Barlow Condensed', sans-serif;
     display: flex;
     flex-direction: column;
@@ -75,7 +72,6 @@ h1 {
 
 h2 {
     text-align: center;
-
     font-size: 2rem;
 }
 
@@ -85,16 +81,10 @@ p {
     font-family: 'Open Sans', sans-serif;
 }
 
-label {
-    font-weight: 500;
-    line-height: 30px;
-    font-size: 1rem;
-    font-family: 'Open Sans', sans-serif;
-}
+/*---MEDIA QUERIES---*/
 
-input {
-    font-weight: 500;
-    line-height: 30px;
-    font-size: 1rem;
-    font-family: 'Open Sans', sans-serif;
+@media (max-width: 800px) {
+    main {
+        grid-template-columns: 1fr;
+    }
 }

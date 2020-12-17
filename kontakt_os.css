@@ -3,6 +3,10 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr;
     max-width: 75%;
+    padding-bottom: 30px;
+    background-color: #e9f4fb;
+    margin-left: 150px;
+    margin-right: 150px;
 }
 
 figure {
@@ -48,26 +52,18 @@ input[type=submit]:hover {
 }
 
 .container {
-    margin: 0px auto;
-    border-radius: 5px;
-    background-color: #E9F4FB;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    margin-top: 70px;
+    margin-right: 100px;
+    padding-top: 70px;
 }
 
 #adresse {
     margin: 0px auto;
-    border-radius: 5px;
-    background-color: white;
     padding-left: 50px;
     padding-right: 50px;
     padding-top: 100px;
     padding-bottom: 100px;
 }
-
-
 
 /* Tekst om Caketrucken */
 
@@ -77,11 +73,13 @@ input[type=submit]:hover {
 
 
 h1 {
-    padding-top: 150px;
+    padding-top: 90px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    margin-top: 90px;
+
 }
 
 h2 {

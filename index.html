@@ -10,18 +10,34 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;300&display=swap" rel="stylesheet">
+    <link rel='icon' href='mmlogo2.png' type='image/x-icon' />
 </head>
 
 <body>
     <header>
         <nav>
             <a href="index.html"><img src="mmlogo.png" alt="Mille's Minis logo" class="logo1"><img src="mmlogo2.png" alt="Mille's Minis logo" class="logo2"></a>
+
             <a href="menu.html">MENU</a>
             <a href="bestilling.html">BESTILLING</a>
             <a href="om_os.html">OM OS</a>
             <a href="kontakt_os.html">KONTAKT</a>
             <a href="caketruck.html">CAKETRUCK</a>
         </nav>
+
+        <div class="topnav">
+            <a href="index.html" class="active"><img src="mmlogo2.png" alt="Mille's Minis logo" class="logo2"></a>
+            <div id="myLinks">
+                <a href="menu.html">MENU</a>
+                <a href="bestilling.html">BESTILLING</a>
+                <a href="om_os.html">OM OS</a>
+                <a href="kontakt_os.html">KONTAKT</a>
+                <a href="caketruck.html">CAKETRUCK</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
     </header>
 
     <section id="splash"></section>
@@ -68,6 +84,15 @@
 
     <script>
         let id = 13
+
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
     </script>
 
     <script src="script.js">

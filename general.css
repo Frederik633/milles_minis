@@ -28,6 +28,53 @@ header img {
     align-self: center;
 }
 
+/*---BURGER MENU---*/
+
+.mobile-container {
+    max-width: 480px;
+    margin: auto;
+    background-color: #555;
+    height: 500px;
+    color: white;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #72a0c1;
+    position: relative;
+    display: none;
+}
+
+.topnav #myLinks {
+    display: none;
+}
+
+.topnav a {
+    color: #fceee3;
+    padding: 14px 16px;
+    font-family: 'Barlow Condensed', sans-serif;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+
+.topnav a.icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.active {
+    background-color: #72a0c1;
+}
+
+.topnav img {
+    width: 20%;
+    padding-left: 5px;
+    align-self: center;
+}
+
 /*---FOOTER---*/
 
 footer {
@@ -55,11 +102,11 @@ footer #abningstider,
 }
 
 footer #SoMe {
-    padding-top: 10px;
+    padding-top: 20px;
 }
 
 footer #SoMe img {
-    width: 30%;
+    width: 20%;
 
 }
 
@@ -80,22 +127,10 @@ footer #kontrolrapport img {
 
 .logo2 {
     display: none;
-    max-width: 100%;
+    max-width: 50%;
     padding-left: 40px;
 }
 
-@media (max-width: 550px) {
-    .logo1 {
-        display: none;
-    }
-
-    .logo2 {
-        display: block;
-        max-width: 100%;
-        padding-left: 40px;
-        align-self: center;
-    }
-}
 
 @media (max-width: 700px) {
     footer {
@@ -109,3 +144,26 @@ footer #kontrolrapport img {
     footer #kontakt {
         text-align: center;
     }
+
+    @media (max-width: 800px) {
+
+        .topnav {
+            display: block;
+        }
+
+        header nav a {
+            display: none;
+        }
+
+        .logo1 {
+            display: none;
+        }
+
+        .logo2 {
+            display: block;
+            max-width: 100%;
+            padding-left: 40px;
+            align-self: center;
+        }
+    }
+}
