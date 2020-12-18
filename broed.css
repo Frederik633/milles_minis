@@ -13,6 +13,12 @@ h2 {
 
 h1 {
     font-size: 1.5rem;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+
 }
 
 body {
