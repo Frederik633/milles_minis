@@ -3,7 +3,7 @@
 #bestilling_info {
     padding-top: 30px;
     padding-right: 70px;
-    padding-left: 250px;
+    padding-left: 100px;
 }
 
 #gavekort_to img {
@@ -52,7 +52,7 @@ input[type=submit]:hover {
 
 #bestilling {
     margin-top: 30px;
-    margin-right: 250px;
+    margin-right: 100px;
 }
 
 /*---GRID---*/
@@ -65,6 +65,8 @@ main {
     margin-left: 150px;
     margin-right: 150px;
 }
+
+
 
 /*---MEDIA QUERIES---*/
 

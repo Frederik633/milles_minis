@@ -59,10 +59,16 @@ input[type=submit]:hover {
 
 #adresse {
     margin: 0px auto;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 100px;
+    padding-right: 70px;
     padding-top: 100px;
     padding-bottom: 100px;
+}
+
+#someknapper {
+    padding-top: 30px;
+    padding-right: 150px;
+    padding-left: 10px;
 }
 
 /* Tekst om Caketrucken */
