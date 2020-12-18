@@ -15,13 +15,28 @@
 <body>
     <header>
         <nav>
-            <a href="index.html"><img src="mmlogo.png" alt="Mille's Minis logo"></a>
+            <a href="index.html"><img src="mmlogo.png" alt="Mille's Minis logo" class="logo1"><img src="mmlogo2.png" alt="Mille's Minis logo" class="logo2"></a>
+
             <a href="menu.html">MENU</a>
             <a href="bestilling.html">BESTILLING</a>
             <a href="om_os.html">OM OS</a>
             <a href="kontakt_os.html">KONTAKT</a>
-            <a href="kontakt_os.html">CAKETRUCK</a>
+            <a href="caketruck.html">CAKETRUCK</a>
         </nav>
+
+        <div class="topnav">
+            <a href="index.html" class="active"><img src="mmlogo2.png" alt="Mille's Minis logo" class="logo2"></a>
+            <div id="myLinks">
+                <a href="menu.html">MENU</a>
+                <a href="bestilling.html">BESTILLING</a>
+                <a href="om_os.html">OM OS</a>
+                <a href="kontakt_os.html">KONTAKT</a>
+                <a href="caketruck.html">CAKETRUCK</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
     </header>
 
     <section id="splash">
@@ -29,10 +44,6 @@
     </section>
 
     <footer>
-        <div id="SoMe">
-            <img src="facebook.png" alt="Mille's Minis facebook">
-            <img src="instagram.png" alt="Mille's Minis instagram">
-        </div>
         <div id="abningstider">
             <p>
                 ÅBNINGSTIDER
@@ -44,28 +55,46 @@
                 Mandag: LUKKET
             </p>
         </div>
-        <div id="logo">
-            <img src="mmlogo2.png" alt="">
 
+        <div id="kontakt">
             <p>
-                Teglholmens Østkaj 9<br>
+                KONTAKT
+                <br>
+                Teglholmens Østkaj 9
+                <br>
                 2450 København
+                <br>
+                Kontaktmillesminis@gmail.com
+                <br>
+                +45 93 83 17 93
+                <br>
             </p>
         </div>
-        <div id="kontrolrapport">
-            <img src="kontrolrapport.jpg" alt="">
+        <div id="logo">
+            <img src="mmlogo2.png" alt="Logo">
         </div>
-        <div id="kontakt_info">
+        <div id="kontrolrapport">
+            <img src="kontrolrapport.jpg" alt="Kontrolrapport">
+        </div>
 
-            <img src="phone.png" alt="Mille's telefon">
-
-            <img src="email.png" alt="Mille's email">
-
+        <div id="SoMe">
+            <img src="facebook.png" alt="Mille's Minis facebook">
+            <img src="instagram.png" alt="Mille's Minis instagram">
         </div>
     </footer>
 
+
     <script>
         let id = 17
+
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
 
     </script>
 
