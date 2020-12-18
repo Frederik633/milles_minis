@@ -67,6 +67,7 @@ header img {
 
 .active {
     background-color: #72a0c1;
+    width: 100%;
 }
 
 .topnav img {
