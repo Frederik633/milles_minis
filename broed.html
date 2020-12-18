@@ -22,28 +22,35 @@
         <a href="caketruck.html">CAKETRUCK</a>
     </nav>
 </header>
-<div class="overskrift">
 
-    <h1>KAGER</h1>
+<section id="indhold">
+
+    <div class="overskrift">
+
+        <h1>BRØD</h1>
 
 
-</div>
+    </div>
 
-<div class="beskrivelse">
-    <p>Introtekst til de forskellige kategorier samt call to action knap, som leder sig til man klikker ind på udvalget og lader sig friste til hvilken slags kage, man kunne stille sulten med</p>
-</div>
+    <div class="beskrivelse">
+        <p>Introtekst til de forskellige kategorier samt call to action knap, som leder sig til man klikker ind på udvalget og lader sig friste til hvilken slags kage, man kunne stille sulten med</p>
+    </div>
 
-<section id="container"></section>
+    <section id="container"></section>
 
-<template>
+    <template>
 
-    <article class="kage">
-        <h2 class="navn"></h2>
-        <p class="beskrivelse"></p>
+        <article class="kage">
+            <h2 class="navn"></h2>
+            <p class="beskrivelse"></p>
 
-    </article>
+        </article>
 
-</template>
+
+    </template>
+
+</section>
+
 
 <footer>
     <div id="abningstider">
@@ -95,20 +102,6 @@
         document.addEventListener("DOMContentLoaded", hentData);
 
 
-
-        //        async function hentKage() {
-        //
-        //            let url = "http://vais.dk/kea/02_SEM/eksamen/wordpress/wp-json/wp/v2/kage?per_page=100";
-        //            let jsonData = await fetch(url);
-        //            underFag = await jsonData.json();
-        //            console.log("LOADING DONE");
-        //
-        //
-        //            document.querySelector(".filter_nav h3").click();
-        //
-        //
-        //        }
-
         const link = "http://vais.dk/kea/02_SEM/eksamen/wordpress/wp-json/wp/v2/brd";
 
         async function hentData() {
@@ -125,11 +118,7 @@
                 const klon = temp.cloneNode(true).content;
                 klon.querySelector(".navn").textContent = broed.title.rendered;
                 klon.querySelector(".beskrivelse").innerHTML = broed.content.rendered;
-                //            klon.querySelector("img").src = "img/billeder/" + dest.gsx$billede.$t + ".jpg";
-                //            klon.querySelector(".indbyggertal").textContent += dest.gsx$indbyggertal.$t;
-                //            klon.querySelector(".vejr").textContent += dest.gsx$vejr.$t;
-                //            klon.querySelector(".funfact").textContent += dest.gsx$funfact.$t;
-                //            klon.querySelector(".pris").textContent += dest.gsx$pris.$t;
+
 
                 klon.querySelector("article").addEventListener("click", () => visDetaljer(kage));
 

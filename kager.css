@@ -1,5 +1,5 @@
 * {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
 }
@@ -21,10 +21,7 @@ p {
 
 }
 
-body {
-    background-color: #E9F4FB;
-
-}
+body {}
 
 footer {
     background-color: white;
@@ -41,19 +38,24 @@ footer {
 
 #container {
     width: 70vw;
-    max-width: 1000px;
     margin: 0 auto;
     margin-top: 40px;
     margin-bottom: 40px;
     display: grid;
     grid-gap: 50px;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    background-color: #E9F4FB;
+    padding-bottom: 50px;
 
 
 }
 
+#indhold {
+    margin-right: 150px;
+    margin-left: 150px;
+    background-color: #E9F4FB;
 
+
+}
 
 
 .overskrift {
@@ -74,3 +76,11 @@ footer {
 
 
 /* MEDIA Q */
+
+@media only screen and (max-width: 1000px) {
+
+    #indhold {
+        margin: 0 auto;
+    }
+
+}

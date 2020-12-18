@@ -23,29 +23,33 @@
     </nav>
 </header>
 
-<div class="overskrift">
+<section id="indhold">
 
-    <h1>KAGER</h1>
+    <div class="overskrift">
+
+        <h1>KAGER</h1>
 
 
-</div>
+    </div>
 
-<div class="overbeskrivelse">
-    <p>Introtekst til de forskellige kategorier samt call to action knap, som leder sig til man klikker ind på udvalget og lader sig friste til hvilken slags kage, man kunne stille sulten med</p>
-</div>
+    <div class="overbeskrivelse">
+        <p>Introtekst til de forskellige kategorier samt call to action knap, som leder sig til man klikker ind på udvalget og lader sig friste til hvilken slags kage, man kunne stille sulten med</p>
+    </div>
 
-<section id="container"></section>
+    <section id="container"></section>
 
-<template>
+    <template>
 
-    <article class="kage">
+        <article class="kage">
 
-        <h2 class="navn"></h2>
-        <p class="beskrivelse"></p>
+            <h2 class="navn"></h2>
+            <p class="beskrivelse"></p>
 
-    </article>
+        </article>
 
-</template>
+    </template>
+
+</section>
 
 <footer>
     <div id="abningstider">
@@ -97,7 +101,7 @@
         document.addEventListener("DOMContentLoaded", hentData);
 
 
-        const link = "http://vais.dk/kea/02_SEM/eksamen/wordpress/wp-json/wp/v2/kage?per_page=100";
+        const link = "http://vais.dk/kea/02_SEM/eksamen/wordpress/wp-json/wp/v2/kage";
 
         async function hentData() {
             const respons = await fetch(link);
@@ -136,8 +140,5 @@
             location.href = `singleview.html?id=${kage.gsx$id.$t}`;
 
         }
-
     </script>
-</body>
-
-</html>
+</body></html>

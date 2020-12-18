@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="kager.css">
+    <link rel="stylesheet" href="drikkevarer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;300&display=swap" rel="stylesheet">
+</head>
+
+<header>
+    <nav>
+        <a href="index.html"><img src="mmlogo.png" alt="Mille's Minis logo"></a>
+        <a href="menu.html">MENU</a>
+        <a href="bestilling.html">BESTILLING</a>
+        <a href="om_os.html">OM OS</a>
+        <a href="kontakt_os.html">KONTAKT</a>
+        <a href="caketruck.html">CAKETRUCK</a>
+    </nav>
+</header>
+
+<section id="indhold">
+
+    <div class="overskrift">
+
+        <h1>DRIKKEVARER</h1>
+
+
+    </div>
+
+    <div class="overbeskrivelse">
+        <p>Introtekst til de forskellige kategorier samt call to action knap, som leder sig til man klikker ind på udvalget og lader sig friste til hvilken slags kage, man kunne stille sulten med</p>
+    </div>
+
+    <section id="container"></section>
+
+    <template>
+
+        <article class="kage">
+
+            <h2 class="navn"></h2>
+            <p class="beskrivelse"></p>
+
+        </article>
+
+    </template>
+
+</section>
+
+<footer>
+    <div id="abningstider">
+        <p>
+            ÅBNINGSTIDER
+            <br>
+            Tirsdag-fredag: 08.00-17.00
+            <br>
+            Lørdag-søndag: 08.00-16.00
+            <br>
+            Mandag: LUKKET
+        </p>
+    </div>
+
+    <div id="kontakt">
+        <p>
+            KONTAKT
+            <br>
+            Teglholmens Østkaj 9
+            <br>
+            2450 København
+            <br>
+            Kontaktmillesminis@gmail.com
+            <br>
+            +45 93 83 17 93
+            <br>
+        </p>
+    </div>
+    <div id="logo">
+        <img src="mmlogo2.png" alt="Logo">
+    </div>
+    <div id="kontrolrapport">
+        <img src="kontrolrapport.jpg" alt="Kontrolrapport">
+    </div>
+
+    <div id="SoMe">
+        <img src="facebook.png" alt="Mille's Minis facebook">
+        <img src="instagram.png" alt="Mille's Minis instagram">
+    </div>
+</footer>
+
+
+<body>
+    <script>
+        let drikkevarer;
+        let container = document.querySelector("#container");
+        let temp = document.querySelector("template");
+
+        document.addEventListener("DOMContentLoaded", hentData);
+
+
+        const link = "http://vais.dk/kea/02_SEM/eksamen/wordpress/wp-json/wp/v2/drikkevare";
+
+        async function hentData() {
+            const respons = await fetch(link);
+            drikkevarer = await respons.json();
+            vis(drikkevarer);
+        }
+
+        function vis(drikkevarer) {
+            //Løber igennem array "destinationer" fra JSON
+            container.innerHTML = "";
+            drikkevarer.forEach(drikkevare => {
+                console.log(drikkevare);
+                const klon = temp.cloneNode(true).content;
+                klon.querySelector(".navn").textContent = drikkevare.title.rendered;
+                klon.querySelector(".beskrivelse").innerHTML = drikkevare.content.rendered;
+
+                klon.querySelector("article").addEventListener("click", () => visDetaljer(drikkevare));
+
+                container.appendChild(klon);
+
+
+
+            })
+
+            drikkevarer.feed.entry.forEach(drikkevare => {
+
+                if (id == dest.gsx$id.$t) {
+                    visDetaljer(drikkevare)
+                }
+            })
+
+        }
+
+        function visDetaljer(drikkevare) {
+            location.href = `singleview.html?id=${drikkevare.gsx$id.$t}`;
+
+        }
+    </script>
+</body></html>
