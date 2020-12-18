@@ -4,6 +4,15 @@ let temp = document.querySelector("template");*/
 
 window.addEventListener("load", sidenVises);
 
+function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+}
+
 function sidenVises() {
     console.log("sidenVises");
 
