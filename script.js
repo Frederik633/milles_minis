@@ -1,7 +1,4 @@
 let content;
-/*let container = document.querySelector("#container");
-let temp = document.querySelector("template");*/
-
 window.addEventListener("load", sidenVises);
 
 function myFunction() {
@@ -15,9 +12,6 @@ function myFunction() {
 
 function sidenVises() {
     console.log("sidenVises");
-
-    /* document.querySelector(".menuknap").addEventListener("click", toggleMenu);*/
-
 }
 
 const link = "http://vais.dk/kea/02_SEM/eksamen/wordpress/wp-json/wp/v2/pages/" + id;
