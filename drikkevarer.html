@@ -24,6 +24,7 @@
     </nav>
 </header>
 
+
 <section id="indhold">
 
     <div class="overskrift">
@@ -38,6 +39,9 @@
     </div>
 
     <section id="container"></section>
+
+    <!-- Skabeloner til at udfylde wordpress indhold oprettes herunder -->
+
 
     <template>
 
@@ -95,50 +99,34 @@
 
 <body>
     <script>
+        //Variabler defineres
         let drikkevarer;
         let container = document.querySelector("#container");
         let temp = document.querySelector("template");
 
         document.addEventListener("DOMContentLoaded", hentData);
 
-
+        //Link til Wordpress post
         const link = "http://vais.dk/kea/02_SEM/eksamen/wordpress/wp-json/wp/v2/drikkevare";
 
+        //Hiver alle drikkevare posts ud fra Wordpress
         async function hentData() {
             const respons = await fetch(link);
             drikkevarer = await respons.json();
             vis(drikkevarer);
         }
 
+        //Løber igennem posts "Brød" fra Wordpress
         function vis(drikkevarer) {
-            //Løber igennem array "destinationer" fra JSON
             container.innerHTML = "";
             drikkevarer.forEach(drikkevare => {
                 console.log(drikkevare);
                 const klon = temp.cloneNode(true).content;
                 klon.querySelector(".navn").textContent = drikkevare.title.rendered;
                 klon.querySelector(".beskrivelse").innerHTML = drikkevare.content.rendered;
-
-                klon.querySelector("article").addEventListener("click", () => visDetaljer(drikkevare));
-
                 container.appendChild(klon);
 
-
-
             })
-
-            drikkevarer.feed.entry.forEach(drikkevare => {
-
-                if (id == dest.gsx$id.$t) {
-                    visDetaljer(drikkevare)
-                }
-            })
-
-        }
-
-        function visDetaljer(drikkevare) {
-            location.href = `singleview.html?id=${drikkevare.gsx$id.$t}`;
-
         }
     </script>
 </body></html>

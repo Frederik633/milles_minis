@@ -36,6 +36,8 @@
         <p>Introtekst til de forskellige kategorier samt call to action knap, som leder sig til man klikker ind på udvalget og lader sig friste til hvilken slags kage, man kunne stille sulten med</p>
     </div>
 
+    <!-- Skabeloner til at udfylde wordpress indhold oprettes herunder -->
+
     <section id="container"></section>
 
     <template>
@@ -94,51 +96,33 @@
 
 <body>
     <script>
+        //Variabler defineres
         let kager;
         let container = document.querySelector("#container");
         let temp = document.querySelector("template");
 
         document.addEventListener("DOMContentLoaded", hentData);
 
-
+        //Link til Wordpress post
         const link = "http://vais.dk/kea/02_SEM/eksamen/wordpress/wp-json/wp/v2/kage";
 
+        //Hiver alle kage posts ud fra Wordpress
         async function hentData() {
             const respons = await fetch(link);
             kager = await respons.json();
             vis(kager);
         }
 
+        //Løber igennem posts "Kager" fra Wordpress
         function vis(kager) {
-            //Løber igennem array "destinationer" fra JSON
             container.innerHTML = "";
             kager.forEach(kage => {
                 console.log(kage);
                 const klon = temp.cloneNode(true).content;
                 klon.querySelector(".navn").textContent = kage.title.rendered;
                 klon.querySelector(".beskrivelse").innerHTML = kage.content.rendered;
-                //            klon.querySelector("img").src = "img/billeder/" + dest.gsx$billede.$t + ".jpg";
-
-                klon.querySelector("article").addEventListener("click", () => visDetaljer(kage));
-
                 container.appendChild(klon);
-
-
-
             })
-
-            kager.feed.entry.forEach(kage => {
-
-                if (id == dest.gsx$id.$t) {
-                    visDetaljer(kage)
-                }
-            })
-
-        }
-
-        function visDetaljer(kage) {
-            location.href = `singleview.html?id=${kage.gsx$id.$t}`;
-
         }
     </script>
 </body></html>

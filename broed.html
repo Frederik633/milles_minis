@@ -23,6 +23,8 @@
     </nav>
 </header>
 
+
+
 <section id="indhold">
 
     <div class="overskrift">
@@ -35,6 +37,9 @@
     <div class="beskrivelse">
         <p>Introtekst til de forskellige kategorier samt call to action knap, som leder sig til man klikker ind på udvalget og lader sig friste til hvilken slags kage, man kunne stille sulten med</p>
     </div>
+
+    <!-- Skabeloner til at udfylde wordpress indhold oprettes herunder -->
+
 
     <section id="container"></section>
 
@@ -95,23 +100,25 @@
 
 <body>
     <script>
+        //Variabler defineres
         let broeds;
         let container = document.querySelector("#container");
         let temp = document.querySelector("template");
 
         document.addEventListener("DOMContentLoaded", hentData);
 
-
+        //Link til Wordpress post
         const link = "http://vais.dk/kea/02_SEM/eksamen/wordpress/wp-json/wp/v2/brd";
 
+        //Hiver alle brød posts ud fra Wordpress
         async function hentData() {
             const respons = await fetch(link);
             broeds = await respons.json();
             vis(broeds);
         }
 
+        //Løber igennem posts "Brød" fra Wordpress
         function vis(broeds) {
-            //Løber igennem array "destinationer" fra JSON
             container.innerHTML = "";
             broeds.forEach(broed => {
                 console.log(broed);
@@ -119,27 +126,9 @@
                 klon.querySelector(".navn").textContent = broed.title.rendered;
                 klon.querySelector(".beskrivelse").innerHTML = broed.content.rendered;
 
-
-                klon.querySelector("article").addEventListener("click", () => visDetaljer(kage));
-
                 container.appendChild(klon);
 
-
-
             })
-
-            broeds.feed.entry.forEach(broed => {
-
-                if (id == broed.gsx$id.$t) {
-                    visDetaljer(broed)
-                }
-            })
-
-        }
-
-        function visDetaljer() {
-            location.href = `singleview.html?id=${broed.gsx$id.$t}`;
-
         }
     </script>
 </body></html>
