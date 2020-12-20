@@ -1,8 +1,50 @@
-/* Produkter CSS */
+/* GENERELT */
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* HOVEDMENU */
+
+
+header nav {
+    display: grid;
+    grid-template-columns: 3.1fr 0.9fr 1.4fr 1fr 1.2fr 1.5fr;
+    background-color: #72a0c1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 17.5%;
+    font-weight: 100;
+    padding-right: 100px;
+}
+
+header img {
+    max-width: 80%;
+    padding-left: 30px;
+    align-self: center;
+}
+
+.topnav a {
+    color: #fceee3;
+    padding: 5px 5px 5px 5px;
+    font-family: 'Barlow Condensed', sans-serif;
+    text-decoration: none;
+    font-size: 3rem;
+    display: block;
+    padding: 33px;
+
+}
+
+/* Produkter */
 
 
 h2 {
     display: none;
+
 }
 
 h1 {
@@ -21,6 +63,7 @@ p {
 footer {
     background-color: white;
 }
+
 
 #container img {
     width: 100%;

@@ -27,6 +27,21 @@
             <a href="kontakt_os.html">KONTAKT</a>
             <a href="caketruck.html">CAKETRUCK</a>
         </nav>
+
+        <div class="topnav">
+            <a href="index.html" class="active"><img src="mmlogo2.png" alt="Mille's Minis logo" class="logo2"></a>
+            <div id="myLinks">
+                <a href="menu.html">MENU</a>
+                <a href="bestilling.html">BESTILLING</a>
+                <a href="om_os.html">OM OS</a>
+                <a href="kontakt_os.html">KONTAKT</a>
+                <a href="caketruck.html">CAKETRUCK</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+
     </header>
 
 
@@ -103,6 +118,15 @@
 
 
     <script>
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+
         //Variabler defineres
         let drikkevarer;
         let container = document.querySelector("#container");
