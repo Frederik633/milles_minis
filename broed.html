@@ -8,7 +8,7 @@
     <meta name="description" content="Et hyggeligt konditori placeret i Teglholmen, hvor konceptet er klassiske og moderne kager og brød i miniformat.">
     <meta name="keywords" content="kager, brød, konditor, bager, mini, minikager, bager teglholmen, bager sydhavn">
     <link rel="stylesheet" href="general.css">
-    <link rel="stylesheet" href="kager.css">
+    <link rel="stylesheet" href="produkter.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;300&display=swap" rel="stylesheet">
@@ -40,14 +40,14 @@
         <p>Introtekst til de forskellige kategorier samt call to action knap, som leder sig til man klikker ind på udvalget og lader sig friste til hvilken slags kage, man kunne stille sulten med</p>
     </div>
 
-    <!-- Skabeloner til at udfylde wordpress indhold oprettes herunder -->
+    <!-- HTML templates til at klone wordpress backend indhold ind bliver oprettet her -->
 
 
     <section id="container"></section>
 
     <template>
 
-        <article class="kage">
+        <article class="produkt">
             <h2 class="navn"></h2>
             <p class="beskrivelse"></p>
 
@@ -109,17 +109,17 @@
 
         document.addEventListener("DOMContentLoaded", hentData);
 
-        //Link til Wordpress post
+        //Link til Wordpress custom post endpoint
         const link = "http://vais.dk/kea/02_SEM/eksamen/wordpress/wp-json/wp/v2/brd";
 
-        //Hiver alle brød posts ud fra Wordpress
+        //Her sendes en http anmodning via fetch til WordPress for at hente Json data
         async function hentData() {
             const respons = await fetch(link);
             broeds = await respons.json();
             vis(broeds);
         }
 
-        //Løber igennem posts "Brød" fra Wordpress
+        //Når Json data er modtaget, klones html templatet og indholdet fra Json lægges ind en for en
         function vis(broeds) {
             container.innerHTML = "";
             broeds.forEach(broed => {

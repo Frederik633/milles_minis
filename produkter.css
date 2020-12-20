@@ -1,10 +1,15 @@
+/* GENRELT */
+
+
 * {
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Kager */
+
+
+/* Produkter CSS */
 
 
 h2 {
@@ -20,8 +25,6 @@ p {
     font-family: 'Open Sans', sans-serif;
 
 }
-
-body {}
 
 footer {
     background-color: white;
@@ -66,7 +69,7 @@ footer {
     text-align: center;
 }
 
-.kage {
+.produkt {
     background-color: white;
     padding-bottom: 20px;
     border-radius: 5px;
