@@ -1,60 +1,30 @@
 main {
-    margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    max-width: 75%;
     padding-bottom: 30px;
     background-color: #e9f4fb;
     margin-left: 150px;
     margin-right: 150px;
 }
 
+
+
 figure {
-    display: flex;
+    display: grid;
     margin-block-start: 0em;
     margin-block-end: 0em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
 
-@media (max-width: 800px) {
-    main {
-        grid-template-columns: 1fr;
-    }
-}
+/*---INDHOLD---*/
 
-
-/* Bestilling */
-
-input[type=text],
-select,
-textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-}
-
-input[type=submit] {
-    background-color: darkblue;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-input[type=submit]:hover {
-    background-color: lightblue;
-}
-
-.container {
-    margin-top: 70px;
-    margin-right: 100px;
-    padding-top: 70px;
+#kort {
+    margin: 0px auto;
+    margin-top: 100px;
+    padding-top: 100px;
+    padding-right: 100px;
+    padding-left: 70px;
 }
 
 #adresse {
@@ -65,17 +35,7 @@ input[type=submit]:hover {
     padding-bottom: 100px;
 }
 
-#someknapper {
-    padding-top: 30px;
-    padding-right: 150px;
-    padding-left: 10px;
-}
-
-/* Tekst om Caketrucken */
-
-.caketruck-txt {}
-
-.caketruckimg {}
+/*--- TEKST TIL KONTAKT OS---*/
 
 
 h1 {
@@ -106,3 +66,40 @@ table {
     font-size: 1rem;
     font-family: 'Open Sans', sans-serif;
 }
+
+/*---MEDIA QUERIES---*/
+
+@media (max-width: 1100px) {
+    main {
+        grid-template-columns: 1fr;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media (max-width: 800px) {
+    main {
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-top: 50px;
+        background-color: #e9f4fb;
+    }
+
+    #adresse {
+        padding-right: 300px;
+    }
+
+    #kort {
+        padding-left: 8px;
+        padding-right: 10px;
+    }
+
+
+    @media (max-width: 700px) {
+
+        #adresse,
+        #kort {
+            padding-left: 40px;
+            padding-right: 40px;
+
+        }

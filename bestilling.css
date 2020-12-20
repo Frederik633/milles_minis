@@ -51,9 +51,12 @@ input[type=submit]:hover {
 }
 
 #bestilling {
-    margin-top: 30px;
-    margin-right: 100px;
+    padding-top: 50px;
+    padding-right: 100px;
+    padding-left: 70px;
 }
+
+
 
 /*---GRID---*/
 
@@ -104,10 +107,8 @@ main {
     @media (max-width: 700px) {
 
         #bestilling_info,
-        input[type=text],
-        select,
-        textarea {
-            padding-left: 5px;
-            padding-right: 80px;
+        #bestilling {
+            padding-left: 40px;
+            padding-right: 40px;
 
         }

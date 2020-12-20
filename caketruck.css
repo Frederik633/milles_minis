@@ -17,8 +17,6 @@ figure {
     margin-inline-end: 0px;
 }
 
-
-
 /* Bestilling */
 
 input[type=text],
@@ -50,18 +48,17 @@ input[type=submit]:hover {
     height: 200px;
 }
 
-#bestilling {
-    margin-top: 30px;
-    margin-right: 100px;
+#bestilingsformular {
+    padding-top: 50px;
+    padding-right: 100px;
+    padding-left: 50px;
 }
 
 /* Tekst om Caketrucken */
 
-.caketruck-txt {}
-
-.caketruck img {
+#caketruck-txt {
     padding-top: 30px;
-    padding-right: 70px;
+    padding-right: 100px;
     padding-left: 100px;
 }
 
@@ -85,17 +82,48 @@ p {
     font-family: 'Open Sans', sans-serif;
 }
 
-/*---MEDIA QUERIES---*/
-
-@media (max-width: 800px) {
-    main {
-        grid-template-columns: 1fr;
-    }
-}
-
-
 h2 {
     text-align: center;
     font-family: 'Barlow Condensed', sans-serif;
     font-size: 2rem;
 }
+
+/*---MEDIA QUERIES---*/
+
+
+
+
+@media (max-width: 1100px) {
+    main {
+        grid-template-columns: 1fr;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media (max-width: 800px) {
+    main {
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-top: 50px;
+        background-color: #e9f4fb;
+    }
+
+    #caketruck-txt {
+        padding-right: 300px;
+    }
+
+    #bestillingsformular {
+        padding-left: 8px;
+        padding-right: 10px;
+    }
+
+
+    @media (max-width: 700px) {
+
+        #caketruck-txt,
+        #bestillingsformular {
+            padding-left: 40px;
+            padding-right: 40px;
+
+        }
