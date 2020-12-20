@@ -115,3 +115,7 @@ main {
             padding-right: 40px;
 
         }
+
+        main {
+            margin-top: 0.5px;
+        }
