@@ -44,8 +44,11 @@ input[type=submit]:hover {
     background-color: #ccc;
 }
 
-#bestilling textarea {
+#bestillingsformular textarea {
     height: 200px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 #bestilingsformular {
@@ -74,18 +77,13 @@ h1 {
 h2 {
     text-align: center;
     font-size: 2rem;
+    font-family: 'Barlow Condensed', sans-serif;
 }
 
 p {
     line-height: 30px;
     font-size: 1rem;
     font-family: 'Open Sans', sans-serif;
-}
-
-h2 {
-    text-align: center;
-    font-family: 'Barlow Condensed', sans-serif;
-    font-size: 2rem;
 }
 
 /*---MEDIA QUERIES---*/
