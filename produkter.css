@@ -9,8 +9,10 @@
 /* HOVEDMENU */
 
 
-header nav {
+header nav a {
     font-weight: 100;
+    padding-right: 70px;
+
 }
 
 header img {
