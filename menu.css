@@ -13,12 +13,6 @@ h2 {
 section {
     margin-left: 150px;
     margin-right: 150px;
-    /*    border: 2px solid black;*/
-    /*
-    border-right: 2px solid black;
-    border-left: 2px solid black;
-*/
-    /*    background-color: rgba(207, 221, 227, 0.2);*/
     background-color: #E9F4FB;
 
 }
@@ -30,11 +24,9 @@ section {
 
 .menubilleder > .wp-block-group__inner-container {
     display: grid;
-    /*    grid-template-columns: 1fr 1fr 1fr;*/
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: 10px;
     justify-items: center;
-    /*    border-bottom: 1px groove black;*/
 }
 
 
