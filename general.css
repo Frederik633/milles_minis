@@ -1,3 +1,12 @@
+/* GENRELT */
+
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 main {
     margin-top: 123px;
 }
