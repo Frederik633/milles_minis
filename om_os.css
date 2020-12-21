@@ -48,8 +48,8 @@ section {
 }
 
 video {
-    width: 854px;
-    height: 480px;
+    width: 520px;
+    height: 360px;
     object-fit: cover;
     object-position: 0 0;
 }
