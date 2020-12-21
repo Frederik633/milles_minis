@@ -21,6 +21,7 @@ figure {
 
 /*---BESTILLINGSFORMULAR---*/
 
+/* Her styles selve bestillingsformularen og den styling der er den samme for input[type=text], select og textarea  */
 input[type=text],
 select,
 textarea {
@@ -34,6 +35,7 @@ textarea {
     font-family: sans-serif;
 }
 
+/* Her styles knappen man trykker på for at bestille sin ordre til sidst, med en pil der bliver til en hånd der klikker */
 input[type=submit] {
     background-color: #72a0c1;
     color: white;
@@ -42,10 +44,12 @@ input[type=submit] {
     cursor: pointer;
 }
 
+/* Her styles knappen man trykker på for at bestille, som ændre farve når man fører musen hen på den */
 input[type=submit]:hover {
     background-color: #ccc;
 }
 
+/* Her styles inde i selve boksen man skriver sin bestilling i */
 #bestilling textarea {
     height: 200px;
     padding-top: 10px;
@@ -53,6 +57,7 @@ input[type=submit]:hover {
     padding-right: 10px;
 }
 
+/* Her styles positionen af bestillingsformularen */
 #bestilling {
     padding-top: 50px;
     padding-right: 100px;
