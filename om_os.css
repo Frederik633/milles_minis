@@ -133,6 +133,58 @@ p {
 
     .tekstudfyld {
         opacity: 0;
+    }
+
+    video {
+        width: 400px;
+    }
+}
+
+
+
+@media only screen and (max-width: 700px) {
+    main {
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-top: 150px;
+        background-color: #e9f4fb;
+    }
+
+    section {
+        margin-right: 5px;
+        margin-left: 5px;
+
+    }
+
+    .omossection > .wp-block-group__inner-container {
+        max-width: 500px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+
+    .omstedet2 {
+        max-width: 500px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+
+    .raavarer1 p {
+        border: none;
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+
+    .tgtgtekst {
+        border: none;
+        margin-left: -10px;
+        margin-right: -10px;
+        border-bottom: 1px groove black;
+    }
+
+    .tekstudfyld {
+        opacity: 0;
         margin-top: -170px;
     }
 
