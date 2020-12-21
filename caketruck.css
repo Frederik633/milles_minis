@@ -55,7 +55,7 @@ input[type=submit]:hover {
 }
 
 #bestilingsformular {
-    padding-top: 50px;
+    padding-top: 150px;
     padding-right: 100px;
     padding-left: 50px;
 }
@@ -78,7 +78,7 @@ h1 {
 }
 
 h2 {
-    text-align: center;
+    text-align: left;
     font-size: 2rem;
     font-family: 'Barlow Condensed', sans-serif;
 }
