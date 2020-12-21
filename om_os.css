@@ -169,6 +169,10 @@ p {
         opacity: 0;
         margin-top: 50px;
     }
+
+    video {
+        width: 100%;
+    }
 }
 
 
@@ -239,5 +243,9 @@ p {
     .tekstudfyld {
         opacity: 0;
         margin-top: -150px;
+    }
+
+    video {
+        width: 100%;
     }
 }
