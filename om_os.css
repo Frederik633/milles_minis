@@ -47,9 +47,9 @@ section {
     max-width: 400px;
 }
 
-.omos2 img {
-    width: 400px;
-    height: 460px;
+video {
+    width: 854px;
+    height: 480px;
     object-fit: cover;
     object-position: 0 0;
 }
