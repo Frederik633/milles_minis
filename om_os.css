@@ -84,6 +84,12 @@ p {
 
 /******* MEDIA QUERIES ********/
 
+@media only screen and (max-width: 1200px) {
+    video {
+        width: 500px;
+    }
+}
+
 @media only screen and (max-width: 1000px) {
     main {
         margin-right: 10px;
