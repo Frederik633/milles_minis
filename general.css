@@ -24,6 +24,12 @@ h2 {
     font-size: 2rem;
 }
 
+h3 {
+    text-align: left;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1.7rem;
+}
+
 /*---HEADER---*/
 
 header nav {
