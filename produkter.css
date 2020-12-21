@@ -35,6 +35,8 @@ header img {
     padding-left: 0;
 }
 
+
+
 /* Produkter */
 
 
@@ -126,6 +128,8 @@ footer {
 
     #indhold {
         margin: 0 auto;
+        margin-left: 18px;
+        margin-right: 18px;
     }
 
 
