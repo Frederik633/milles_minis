@@ -32,6 +32,7 @@ header img {
 
 .topnav img {
     width: 35%;
+    padding-left: 0;
 }
 
 /* Produkter */
@@ -127,12 +128,20 @@ footer {
         margin: 0 auto;
     }
 
-    .overskrift {
-        padding: 20px;
-    }
+
 
     .overbeskrivelse {
         padding: 0px 50px 0px 50px;
     }
+
+}
+
+@media only screen and (max-width: 700px) {
+
+
+    .overskrift {
+        padding: 20px;
+    }
+
 
 }
