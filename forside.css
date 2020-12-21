@@ -14,11 +14,13 @@ main {
 
 /*---SPLASH---*/
 
-#splashbillede img {
+video {
     width: 100%;
     height: auto;
-    object-fit: cover;
-    object-position: 5px 10%;
+}
+
+body {
+    margin: 0 auto;
 }
 
 /*---MEDIA QUERY---*/

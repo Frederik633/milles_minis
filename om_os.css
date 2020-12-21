@@ -48,10 +48,7 @@ section {
 }
 
 video {
-    width: 520px;
-    height: 360px;
-    object-fit: cover;
-    object-position: 0 0;
+    width: 425px;
 }
 
 .omstedetsection > .wp-block-group__inner-container {
@@ -170,6 +167,10 @@ p {
         opacity: 0;
         margin-top: 50px;
     }
+
+    video {
+        width: 100%;
+    }
 }
 
 
@@ -240,5 +241,9 @@ p {
     .tekstudfyld {
         opacity: 0;
         margin-top: -150px;
+    }
+
+    video {
+        width: 100%;
     }
 }
