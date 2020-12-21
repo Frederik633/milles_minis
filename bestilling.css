@@ -32,7 +32,11 @@ textarea {
     margin-top: 6px;
     margin-bottom: 16px;
     resize: vertical;
-    font-family: sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+
+label {
+    font-family: 'Open Sans', sans-serif;
 }
 
 /* Her styles knappen man trykker på for at bestille sin ordre til sidst, med en pil der bliver til en hånd der klikker */

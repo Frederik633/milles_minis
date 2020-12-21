@@ -28,7 +28,11 @@ textarea {
     margin-top: 6px;
     margin-bottom: 16px;
     resize: vertical;
-    font-family: sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+
+label {
+    font-family: 'Open Sans', sans-serif;
 }
 
 input[type=submit] {
