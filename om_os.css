@@ -17,7 +17,7 @@ h1 {
 }
 
 h2 {
-    text-align: center;
+    text-align: left;
     font-family: 'Barlow Condensed', sans-serif;
     font-size: 2rem;
 }
@@ -80,7 +80,6 @@ video {
     margin-right: 200px;
     margin-left: 200px;
     margin-bottom: 50px;
-    border: 1px solid black;
     padding: 20px;
 }
 
@@ -91,7 +90,6 @@ video {
 .tgtgtekst {
     margin-right: 200px;
     margin-left: 200px;
-    border: 1px solid black;
     padding: 20px;
 }
 
