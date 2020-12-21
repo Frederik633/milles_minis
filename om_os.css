@@ -48,10 +48,7 @@ section {
 }
 
 video {
-    width: 520px;
-    height: 360px;
-    object-fit: cover;
-    object-position: 0 0;
+    width: 425px;
 }
 
 .omstedetsection > .wp-block-group__inner-container {
