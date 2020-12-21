@@ -131,6 +131,10 @@ header img {
     padding-left: 130px;
 }
 
+.selected {
+    text-decoration: underline;
+}
+
 
 /*---FOOTER---*/
 
