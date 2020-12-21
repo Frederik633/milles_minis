@@ -63,7 +63,7 @@ input[type=submit]:hover {
 
 /* Her styles positionen af bestillingsformularen */
 #bestilling {
-    padding-top: 50px;
+    padding-top: 130px;
     padding-right: 100px;
     padding-left: 70px;
 }
@@ -87,7 +87,13 @@ main {
 
 @media (max-width: 1250px) {
     main {
-        margin-top: 80px;
+        margin-top: 150px;
+    }
+}
+
+@media (max-width: 1200px) {
+    main {
+        margin-top: 100px;
     }
 }
 

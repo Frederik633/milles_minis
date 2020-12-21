@@ -50,7 +50,7 @@ h1 {
 }
 
 h2 {
-    text-align: center;
+    text-align: left;
     font-family: 'Barlow Condensed', sans-serif;
     font-size: 2rem;
 }
@@ -89,7 +89,7 @@ table {
     main {
         margin-right: 10px;
         margin-left: 10px;
-        margin-top: 50px;
+        margin-top: 80px;
         background-color: #e9f4fb;
     }
 
