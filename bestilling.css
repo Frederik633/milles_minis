@@ -1,3 +1,9 @@
+p {
+    line-height: 30px;
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
 /*---BESTILLING INFO---*/
 
 #bestilling_info {
