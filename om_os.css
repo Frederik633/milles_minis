@@ -106,10 +106,17 @@ p {
 
 
 @media only screen and (max-width: 800px) {
+    main {
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-top: -150px;
+        background-color: #e9f4fb;
+    }
+
     section {
         margin-right: 5px;
         margin-left: 5px;
-        background-color: white;
+
     }
 
     .omossection > .wp-block-group__inner-container {
@@ -163,6 +170,9 @@ p {
     }
 
     .tekstudfyld {
-        display: none;
+        opacity: 0;
+        margin-top: -150px;
     }
 }
+
+@media (max-width: 800px) {}
