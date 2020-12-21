@@ -99,27 +99,11 @@ p {
     }
 
     .omossection > .wp-block-group__inner-container {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .omos1 {
         max-width: 500px;
+        margin-right: 10px;
         margin-left: 10px;
     }
 
-    .omos2 img {
-        width: 400px;
-        height: 460px;
-        object-fit: cover;
-        object-position: 0 0;
-        margin-left: -10px;
-    }
-
-    .omstedetsection > .wp-block-group__inner-container {
-        display: flex;
-        flex-wrap: wrap-reverse;
-    }
 
     .omstedet2 {
         max-width: 500px;
@@ -127,13 +111,6 @@ p {
         margin-left: 10px;
     }
 
-    .omstedet1 img {
-        width: 400px;
-        height: 460px;
-        object-fit: cover;
-        object-position: 0 0;
-        margin-left: -10px;
-    }
 
     .raavarer1 p {
         border: none;
@@ -150,85 +127,10 @@ p {
 
     .tekstudfyld {
         opacity: 0;
-        margin-top: 50px;
+        margin-top: -170px;
     }
 
     video {
-        width: 100%;
-    }
-}
-
-
-@media only screen and (max-width: 600px) {
-    main {
-        margin-right: 10px;
-        margin-left: 10px;
-        margin-top: -150px;
-        background-color: #e9f4fb;
-    }
-
-    section {
-        margin-right: 5px;
-        margin-left: 5px;
-
-    }
-
-    .omossection > .wp-block-group__inner-container {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .omos1 {
-        max-width: 500px;
-        margin-left: 10px;
-    }
-
-    .omos2 img {
         width: 400px;
-        height: 460px;
-        object-fit: cover;
-        object-position: 0 0;
-        margin-left: -10px;
-    }
-
-    .omstedetsection > .wp-block-group__inner-container {
-        display: flex;
-        flex-wrap: wrap-reverse;
-    }
-
-    .omstedet2 {
-        max-width: 500px;
-        margin-right: 10px;
-        margin-left: 10px;
-    }
-
-    .omstedet1 img {
-        width: 400px;
-        height: 460px;
-        object-fit: cover;
-        object-position: 0 0;
-        margin-left: -10px;
-    }
-
-    .raavarer1 p {
-        border: none;
-        margin-left: -10px;
-        margin-right: -10px;
-    }
-
-    .tgtgtekst {
-        border: none;
-        margin-left: -10px;
-        margin-right: -10px;
-        border-bottom: 1px groove black;
-    }
-
-    .tekstudfyld {
-        opacity: 0;
-        margin-top: -150px;
-    }
-
-    video {
-        width: 100%;
     }
 }
